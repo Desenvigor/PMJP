@@ -6,7 +6,8 @@ body {
   font-family: Roboto;
   display: flex;
   justify-content: center;
-  margin-top: 80px;
+  margin: 0 15px;
+  margin-top: 30px;
 }
 
 .logon {
@@ -47,9 +48,18 @@ body {
 .logon__form .form__button {
   right: 0;
   height: 40px;
-  width: 30%;
   margin-top: 10px;
-  margin-right: 0;
+  border-radius: 10px;
+  border-style: none;
+}
+.logon__form .form__button:hover {
+  box-shadow: 5px 5px 10px #000;
+  background-color: #ec4f57;
+  font-weight: bold;
+  text-shadow: 1px 0 10px #000;
+  letter-spacing: 0.3em;
+  color: #FFF;
+  transition: 300ms;
 }
 
 /*# sourceMappingURL=style.css.map */

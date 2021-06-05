@@ -1,5 +1,8 @@
 $grey-color: #BDBDBD;
+$color-white: #FFF;
 $first-red-color: #C00812;
+$second-red-color: #ec4f57;
+$color-black: #000;
 
 html {
     background-color: $grey-color;
@@ -9,7 +12,8 @@ body {
     font-family: Roboto;
     display: flex;
     justify-content: center;
-    margin-top: 80px;
+    margin: 0 15px;
+    margin-top: 30px;
 }
 
 .logon {
@@ -57,9 +61,20 @@ body {
             &__button{
                 right: 0;
                 height: 40px;
-                width: 30%;
                 margin-top: 10px;
-                margin-right: 0;
+                border-radius: 10px;
+                border-style: none;
+
+                &:hover{
+                    box-shadow: 5px 5px 10px $color-black;
+                    background-color: $second-red-color;
+                    font-weight: bold;
+                    text-shadow: 1px 0 10px $color-black;
+                    letter-spacing: 0.3em;
+                    color: $color-white;
+                    transition: 300ms;
+                }
+
             }
             
         }
